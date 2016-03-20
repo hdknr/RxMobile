@@ -6,7 +6,14 @@
 	Padding="10, 40, 10, 10">
 	<ContentPage.Content>
 
+	<ListView x:Name="CityList">
+    <ListView.ItemTemplate>
+      <DataTemplate>
+        <TextCell Text="{Binding title}" />
+      </DataTemplate>
+    </ListView.ItemTemplate>
 
+ 	 </ListView>
 
 	</ContentPage.Content>
 </ContentPage>
