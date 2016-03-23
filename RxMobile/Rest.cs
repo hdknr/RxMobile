@@ -3,17 +3,17 @@ using System.Xml.Linq;
 
 using RestSharp.Portable;
 using RestSharp.Portable.HttpClient;
-using RestSharp.Portable.Deserializers;
+//using RestSharp.Portable.Deserializers;
 
 using System.Threading.Tasks;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
-using Newtonsoft.Json.Serialization;
+//using Newtonsoft.Json;
+//using Newtonsoft.Json.Linq;
+//using Newtonsoft.Json.Serialization;
 
 using System.Reactive;
 using System.Reactive.Linq;
 using Akavache;
-using Akavache.Sqlite3;
+//using Akavache.Sqlite3;
 
 namespace RxMobile
 {

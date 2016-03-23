@@ -15,7 +15,7 @@ using Akavache;
 using Akavache.Sqlite3;
 using System.Reactive;
 using System.Reactive.Linq;
-
+using System.Reactive.Threading.Tasks;
 
 namespace RxMobile.Livedoor
 {
@@ -47,6 +47,17 @@ namespace RxMobile.Livedoor
 			);
 		}
 
+		public static void LoadString(){
+			Rest.Get<string> (base_url, area_path).ToObservable ()
+				.Subscribe (
+				i => {
+					System.Diagnostics.Debug.WriteLine (i);
+				},
+				ex => {
+					System.Diagnostics.Debug.WriteLine (ex.Message);
+				}
+			);
+		}
 	}
 
 }
